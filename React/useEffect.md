@@ -1,6 +1,6 @@
 ## `useEffect` Hook
 
-#### `useEffect` Hook LifeCycle (when there exists a dependency array)
+#### `useEffect` Hook LifeCycle (when there exist a dependency array)
 
 - **Initial Render:**  
   When the component first renders, the `useEffect` hook runs regardless of what's in the dependency array.
@@ -33,5 +33,3 @@
         // `countdown` or `showVerification` changes
     }, [countdown, showVerification]);
     ```
-
-
