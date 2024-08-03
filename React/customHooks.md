@@ -15,7 +15,7 @@ When you have a statful logic that is being repeated multiple times, you can use
    Return the necassary values that you're going to use in your components.  
    Usually, you need to return the _states_ and the _functions_ that manipulate those states.
 
-4. **Use Your Hook:**
+4. **Use Your Hook:**  
    Your hook is ready to be used to make your code more professional and easier to read and manage.🎉
 
 ### Example:
@@ -57,7 +57,7 @@ export default useFetch;
 _Notes for better understanding the code:_  
 ✅There are states defined using `useState`. These would be the states that we need to manage in another component without the custom hook.  
 ✅Then the `fetchData` function is defined which will handle the request. (`finally` will run after the `try` and `catch` blocks are finished.)  
-✅Then `useEffect` is used to execute the `fetchData` function in the initial render and whenever the `url` is changed. ([About `useEffect` Hook](../useEffect.md).)  
+✅Then `useEffect` is used to execute the `fetchData` function in the initial render and whenever the `url` is changed. ([About `useEffect` Hook](useEffect.md) )  
 ✅Finally, the states are returned by our custom hook. (There was no need to return the `fetchData` functin in this example. But we could return it.)
 
 **_Now using the custom hook in other components:_**
